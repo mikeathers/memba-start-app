@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d160f9cb-a2f2-4afc-8dc5-c7fc16c81513" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app-pages/apps/apps.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/apps/apps.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/apps/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/apps/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loading/loading.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/loading.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loading/loading.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/loading.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text/text.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text/text.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/title-bar/title-bar.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/title-bar/title-bar.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/auth/auth.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/auth/auth.context.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/use-component-visible/use-component-visible.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use-component-visible/use-component-visible.hook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/refresh-jwt/refresh-jwt.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/refresh-jwt/refresh-jwt.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
       <workItem from="1689667158330" duration="1432000" />
       <workItem from="1689702371260" duration="154000" />
       <workItem from="1689852455158" duration="629000" />
-      <workItem from="1689922695589" duration="13955000" />
+      <workItem from="1689922695589" duration="15200000" />
     </task>
     <servers />
   </component>

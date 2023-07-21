@@ -142,6 +142,10 @@ declare global {
     checkSpamFolder: string
     sendAgain: string
   }
+
+  type AppsContent = {
+    heading: string
+  }
 }
 
 export {}

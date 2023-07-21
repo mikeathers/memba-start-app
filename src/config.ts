@@ -2,6 +2,7 @@ export const TEMP_LOCAL_STORAGE_PWD_KEY = 'TEMP_LOCAL_STORAGE_PWD_KEY'
 export const IDENTITY_LOCALSTORAGE_KEY = 'IDENTITY_LOCALSTORAGE_KEY'
 export const JWT_LOCALSTORAGE_KEY = 'JWT_LOCALSTORAGE_KEY'
 interface PAGE_ROUTES {
+  APPS: string
   NEW_TENANT: string
   CONFIRM_ACCOUNT: string
   LOGIN: string
@@ -17,6 +18,7 @@ interface SITE_ROUTES {
 }
 
 export const PAGE_ROUTES: PAGE_ROUTES = {
+  APPS: '/apps',
   NEW_TENANT: '/new-tenant',
   CONFIRM_ACCOUNT: '/confirm-account',
   LOGIN: '/login',

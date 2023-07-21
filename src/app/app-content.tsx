@@ -24,9 +24,11 @@ export const AppContent: React.FC<AppContentProps> = (props) => {
     if (!state.isAuthenticating) {
       if (!state.isAuthenticated) {
         router.push(CONFIG.SITE_ROUTES.ID)
+      } else {
+        router.push(CONFIG.PAGE_ROUTES.APPS)
       }
     }
-  }, [state.isAuthenticated])
+  }, [state.isAuthenticating, state.isAuthenticated])
 
   useEffect(() => {
     runRefreshUserSession()
