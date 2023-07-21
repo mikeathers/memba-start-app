@@ -22,11 +22,11 @@ export const AppContent: React.FC<AppContentProps> = (props) => {
     await run(refreshUserSession())
   }
 
-  // useEffect(() => {
-  //   if (!isAuthenticated) {
-  //     router.push(CONFIG.SITE_ROUTES.ID)
-  //   }
-  // }, [isAuthenticated])
+  useEffect(() => {
+    if (!isAuthenticated) {
+      router.push(CONFIG.SITE_ROUTES.ID)
+    }
+  }, [isAuthenticated])
 
   useEffect(() => {
     runRefreshUserSession()
