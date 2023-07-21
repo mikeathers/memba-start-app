@@ -40,9 +40,9 @@ export const TitleBar: React.FC = () => {
         <Text type={'h2'}>Memba</Text>
       </LeftContent>
       <RightContent>
-        <AvatarCircle onClick={() => setIsComponentVisible(true)}>
-          {firstNameInitial}
-          {lastNameInitial}
+        <AvatarCircle onClick={() => setIsComponentVisible(!isComponentVisible)}>
+          <Text type={'h4'}>{firstNameInitial}</Text>
+          <Text type={'h4'}>{lastNameInitial}</Text>
         </AvatarCircle>
         {isComponentVisible && (
           <Menu ref={ref}>
@@ -52,8 +52,8 @@ export const TitleBar: React.FC = () => {
               </Text>
               <NameContainer>
                 <AvatarCircleSmall>
-                  {firstNameInitial}
-                  {lastNameInitial}
+                  <Text type={'body'}>{firstNameInitial}</Text>
+                  <Text type={'body'}>{lastNameInitial}</Text>
                 </AvatarCircleSmall>
                 <Name>
                   <Text type={'body'}>{`${sentenceCase(user?.givenName)} ${sentenceCase(

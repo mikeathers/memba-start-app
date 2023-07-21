@@ -108,7 +108,7 @@ export const H3 = styled.h3<StyledTextProps>`
 export const H4 = styled.h4<StyledTextProps>`
   ${margins}
   ${styledTextAlign}
-  font-weight: ${fontWeights.medium};
+  font-weight: ${fontWeights.regular};
   font-size: ${fontSizes.m};
   line-height: ${lineHeights.medium};
   color: ${({color}) => (color ? colors[color] : colors.greys100)};
