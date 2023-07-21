@@ -71,6 +71,8 @@ const useAuth = (): AuthContextValue => {
       await refreshJwt()
       const cognitoUser = await getCurrentUser()
 
+      console.log({cognitoUser})
+
       if (cognitoUser) {
         const {attributes} = cognitoUser
         dispatch({

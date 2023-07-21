@@ -7,6 +7,8 @@ export const refreshJwt = async () => {
   try {
     const session = await Auth.currentSession()
 
+    console.log({session})
+
     if (session) {
       const accessToken = session.getIdToken().getJwtToken()
       setItemInLocalStorage(JWT_LOCALSTORAGE_KEY, accessToken)

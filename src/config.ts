@@ -4,17 +4,35 @@ export const JWT_LOCALSTORAGE_KEY = 'JWT_LOCALSTORAGE_KEY'
 interface PAGE_ROUTES {
   NEW_TENANT: string
   CONFIRM_ACCOUNT: string
-  SIGN_IN: string
+  LOGIN: string
   PRICING_PLANS: string
   APP_HOME: string
+  SIGNUP: string
+  FORGOT_PASSWORD: string
+  RESET_PASSWORD: string
+}
+
+interface SITE_ROUTES {
+  ID: string
 }
 
 export const PAGE_ROUTES: PAGE_ROUTES = {
   NEW_TENANT: '/new-tenant',
   CONFIRM_ACCOUNT: '/confirm-account',
-  SIGN_IN: '/sign-in',
+  LOGIN: '/login',
   PRICING_PLANS: '/pricing-plans',
   APP_HOME: '/app/home',
+  SIGNUP: '/signup',
+  FORGOT_PASSWORD: '/forgot-password',
+  RESET_PASSWORD: '/reset-password',
+}
+
+export const DEV_SITE_ROUTES: SITE_ROUTES = {
+  ID: 'https://id.dev.memba.co.uk',
+}
+
+export const PROD_SITE_ROUTES: SITE_ROUTES = {
+  ID: 'https://id.memba.co.uk',
 }
 
 interface API_ROUTES {
@@ -33,11 +51,11 @@ const PROD_API_ROUTES: API_ROUTES = {
 }
 
 interface ENDPOINTS {
-  REGISTER_TENANT: string
+  CREATE_TENANT: string
 }
 
 const ENDPOINTS: ENDPOINTS = {
-  REGISTER_TENANT: 'register-tenant',
+  CREATE_TENANT: '/tenants/create-account',
 }
 
 interface AMPLIFY {
@@ -59,6 +77,7 @@ const PROD_AMPLIFY: AMPLIFY = {
 
 interface CONFIG {
   PAGE_ROUTES: PAGE_ROUTES
+  SITE_ROUTES: SITE_ROUTES
   API_ROUTES: API_ROUTES
   AMPLIFY: AMPLIFY
   ENDPOINTS: ENDPOINTS
@@ -66,6 +85,7 @@ interface CONFIG {
 
 export const DEV_CONFIG: CONFIG = {
   PAGE_ROUTES,
+  SITE_ROUTES: DEV_SITE_ROUTES,
   API_ROUTES: DEV_API_ROUTES,
   AMPLIFY: DEV_AMPLIFY,
   ENDPOINTS,
@@ -73,15 +93,10 @@ export const DEV_CONFIG: CONFIG = {
 
 export const PROD_CONFIG: CONFIG = {
   PAGE_ROUTES,
+  SITE_ROUTES: PROD_SITE_ROUTES,
   API_ROUTES: PROD_API_ROUTES,
   AMPLIFY: PROD_AMPLIFY,
   ENDPOINTS,
-}
-
-export enum TIERS {
-  FREE = 'Free',
-  BASIC = 'Basic',
-  PREMIUM = 'Premium',
 }
 
 export const CONFIG =

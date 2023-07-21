@@ -60,6 +60,12 @@ module.exports = {
         '@typescript-eslint/no-unsafe-return': 'warn',
         'react-hooks/exhaustive-deps': 'off',
         '@typescript-eslint/no-floating-promises': 'off',
+        '@typescript-eslint/no-misused-promises': [
+          'error',
+          {
+            checksVoidReturn: false,
+          },
+        ],
       },
     },
     {

@@ -1,7 +1,6 @@
 export * from './svg-icon'
 export * from './text'
 export * from './title-bar'
-export * from './unauthenticated-wrapper'
 export * from './pricing-card'
 export * from './button'
 export * from './text-input'

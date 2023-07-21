@@ -5,8 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d160f9cb-a2f2-4afc-8dc5-c7fc16c81513" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app-content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/use-component-visible/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/use-component-visible/use-component-visible.hook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/complete-sign-up/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/confirm-account/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/new-tenant/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sign-in/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/title-bar/title-bar.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/title-bar/title-bar.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/title-bar/title-bar.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/title-bar/title-bar.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/unauthenticated-wrapper/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/unauthenticated-wrapper/unauthenticated-wrapper.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/unauthenticated-wrapper/unauthenticated-wrapper.styles.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/auth/auth.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/auth/auth.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/complete-sign-up/complete-sign-up.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/complete-sign-up/complete-sign-up.styles.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/complete-sign-up/complete-sign-up.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/complete-sign-up/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/confirm-account/confirm-account.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/confirm-account/confirm-account.styles.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/confirm-account/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/new-tenant/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/new-tenant/new-tenant.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/new-tenant/new-tenant.styles.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/new-tenant/new-tenant.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/sign-in/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/sign-in/sign-in.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/sign-in/sign-in.styles.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/sign-in/sign-in.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/stores.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/tenants/create-tenant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tenants/create-tenant.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/refresh-jwt/refresh-jwt.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/refresh-jwt/refresh-jwt.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,26 +64,34 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Sjk0nw6YruNpBZYDVczT6LaKqS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/michaelatherton/Development/memba/memba-start-app/deployment&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/michaelatherton/Development/memba/memba-start-app/src/app&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/Users/michaelatherton/.nvm/versions/node/v18.15.0/bin/node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/michaelatherton/Development/memba/memba-start-app/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/michaelatherton/Development/memba/memba-start-app/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/deployment" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -54,6 +106,8 @@
       <updated>1689667157020</updated>
       <workItem from="1689667158330" duration="1432000" />
       <workItem from="1689702371260" duration="154000" />
+      <workItem from="1689852455158" duration="629000" />
+      <workItem from="1689922695589" duration="7103000" />
     </task>
     <servers />
   </component>
