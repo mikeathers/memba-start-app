@@ -13,6 +13,13 @@ import 'react-toastify/dist/ReactToastify.css'
 import {TitleBar} from '@/components'
 
 export const App = ({children}: {children: React.ReactElement}) => {
+  const cookieStorage = {
+    domain: process.env.NEXT_PUBLIC_COOKIE_STORAGE_DOMAIN,
+    secure: Boolean(process.env.NEXT_PUBLIC_COOKIE_STORAGE_SECURE),
+    path: process.env.NEXT_PUBLIC_COOKIE_STORAGE_PATH,
+    expires: Number(process.env.NEXT_PUBLIC_COOKIE_STORAGE_EXPIRES),
+  }
+  console.log({cookieStorage})
   Auth.configure({
     mandatorySignIn: false,
     region: 'eu-west-2',
@@ -20,6 +27,7 @@ export const App = ({children}: {children: React.ReactElement}) => {
     identityPoolId: CONFIG.AMPLIFY.IDENTITY_POOL_ID,
     userPoolWebClientId: CONFIG.AMPLIFY.USER_WEB_CLIENT_ID,
     ssr: true,
+    cookieStorage,
   })
 
   return (
