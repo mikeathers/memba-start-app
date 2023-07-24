@@ -54,7 +54,9 @@ export const AvatarCircle = styled.button`
 
   &:hover {
     background-color: ${colors.blues800};
-    color: rgb(255, 255, 255);
+    h4 {
+      color: ${colors.neutrals000};
+    }
   }
 `
 
