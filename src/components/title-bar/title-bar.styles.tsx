@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import {colors, mediaQueries, spacing} from '@/styles'
+import {colors, fontSizes, mediaQueries, spacing} from '@/styles'
 import {Button} from '../button'
 
 export const Container = styled.div`
@@ -12,14 +12,13 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: ${spacing.space4x};
-  position: absolute;
 
   @media (${mediaQueries.l}) {
-    margin-bottom: ${spacing.space8x};
+    margin-bottom: ${spacing.space4x};
   }
 
   @media (${mediaQueries.xl}) {
-    margin-bottom: ${spacing.space12x};
+    margin-bottom: ${spacing.space6x};
   }
 `
 
@@ -44,13 +43,26 @@ export const RightContent = styled.div`
 export const AvatarCircle = styled.button`
   border-radius: 100px;
   border: 1px solid ${colors.blues800};
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   background-color: transparent;
+
+  h4 {
+    font-size: ${fontSizes.s};
+  }
+
+  @media (${mediaQueries.s}) {
+    height: 50px;
+    width: 50px;
+
+    h4 {
+      font-size: ${fontSizes.m};
+    }
+  }
 
   &:hover {
     background-color: ${colors.blues800};

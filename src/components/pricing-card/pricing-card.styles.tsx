@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 import {
   borderRadius,
   colors,
@@ -9,7 +9,10 @@ import {
 } from '@/styles'
 import {Text} from '../text'
 
-export const Container = styled.div`
+interface ContainerProps {
+  selected: boolean
+}
+export const Container = styled.div<ContainerProps>`
   border-radius: ${borderRadius.rounded};
   border: 1px solid ${colors.blues100};
   display: flex;
@@ -17,6 +20,14 @@ export const Container = styled.div`
   flex-direction: column;
   padding: 6px;
   margin-top: ${spacing.space4x};
+
+  ${({selected}) => {
+    if (selected) {
+      return css`
+        border: 5px solid ${colors.blues800};
+      `
+    }
+  }}
 
   @media (${mediaQueries.s}) {
     margin-right: ${spacing.space4x};
@@ -32,7 +43,7 @@ export const Container = styled.div`
 
 export const TitleContainer = styled.div`
   width: 100%;
-  height: 160px;
+  height: 120px;
   border-radius: ${borderRadius.rounded};
   padding: ${spacing.space2x};
   background-color: ${colors.blues800};
@@ -47,7 +58,6 @@ export const TitleText = styled.h3`
 export const TitleNumber = styled.h4`
   font-size: ${fontSizes.l};
   font-weight: ${fontWeights.medium};
-  margin-top: ${spacing.space6x};
 `
 
 export const Content = styled.div`

@@ -3,14 +3,7 @@ export const IDENTITY_LOCALSTORAGE_KEY = 'IDENTITY_LOCALSTORAGE_KEY'
 export const JWT_LOCALSTORAGE_KEY = 'JWT_LOCALSTORAGE_KEY'
 interface PAGE_ROUTES {
   APPS: string
-  NEW_TENANT: string
-  CONFIRM_ACCOUNT: string
-  LOGIN: string
-  PRICING_PLANS: string
-  APP_HOME: string
-  SIGNUP: string
-  FORGOT_PASSWORD: string
-  RESET_PASSWORD: string
+  GYM_MANAGEMENT: string
 }
 
 interface SITE_ROUTES {
@@ -19,19 +12,11 @@ interface SITE_ROUTES {
 
 export const PAGE_ROUTES: PAGE_ROUTES = {
   APPS: '/apps',
-  NEW_TENANT: '/new-tenant',
-  CONFIRM_ACCOUNT: '/confirm-account',
-  LOGIN: '/login',
-  PRICING_PLANS: '/pricing-plans',
-  APP_HOME: '/app/home',
-  SIGNUP: '/signup',
-  FORGOT_PASSWORD: '/forgot-password',
-  RESET_PASSWORD: '/reset-password',
+  GYM_MANAGEMENT: '/gym-management',
 }
 
 export const DEV_SITE_ROUTES: SITE_ROUTES = {
-  ID: 'https://id.dev.memba.co.uk',
-  // ID: 'http://localhost:3000',
+  ID: process.env.NEXT_PUBLIC_ID_APP_URL ?? '',
 }
 
 export const PROD_SITE_ROUTES: SITE_ROUTES = {
@@ -54,11 +39,17 @@ const PROD_API_ROUTES: API_ROUTES = {
 }
 
 interface ENDPOINTS {
-  CREATE_TENANT: string
+  CREATE_TENANT_ACCOUNT: string
+  GET_TENANT_ACCOUNT: string
+  GET_TENANT: string
+  CREATE_GYM_APP: string
 }
 
 const ENDPOINTS: ENDPOINTS = {
-  CREATE_TENANT: '/tenants/create-account',
+  GET_TENANT_ACCOUNT: '/tenants/get-account',
+  CREATE_TENANT_ACCOUNT: '/tenants/create-account',
+  GET_TENANT: 'get-tenant',
+  CREATE_GYM_APP: 'create-gym-app',
 }
 
 interface AMPLIFY {
@@ -100,6 +91,12 @@ export const PROD_CONFIG: CONFIG = {
   API_ROUTES: PROD_API_ROUTES,
   AMPLIFY: PROD_AMPLIFY,
   ENDPOINTS,
+}
+
+export enum TIERS {
+  FREE = 'Free',
+  BASIC = 'Basic',
+  PREMIUM = 'Premium',
 }
 
 export const CONFIG =

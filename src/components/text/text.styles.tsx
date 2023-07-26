@@ -91,9 +91,13 @@ export const H2 = styled.h2<StyledTextProps>`
   ${margins}
   ${styledTextAlign}
   font-weight: ${fontWeights.regular};
-  font-size: ${fontSizes.l};
+  font-size: ${fontSizes.m};
   color: ${({color}) => (color ? colors[color] : colors.greys100)};
   letter-spacing: ${letterSpacing.title};
+
+  @media (${mediaQueries.s}) {
+    font-size: ${fontSizes.l};
+  }
 `
 
 export const H3 = styled.h3<StyledTextProps>`
@@ -116,9 +120,13 @@ export const H4 = styled.h4<StyledTextProps>`
 
 export const Body = styled(BaseText)`
   font-weight: ${fontWeights.regular};
-  font-size: ${fontSizes.s};
+  font-size: ${fontSizes.xs};
   line-height: ${lineHeights.medium};
   color: ${({color}) => (color ? colors[color] : colors.greys100)};
+
+  @media (${mediaQueries.s}) {
+    font-size: ${fontSizes.s};
+  }
 `
 
 export const BodyBold = styled(Body)`

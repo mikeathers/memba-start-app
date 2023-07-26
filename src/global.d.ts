@@ -10,12 +10,50 @@ declare global {
     tenantId?: string
   }
 
+  type Membership = {
+    name: string
+    price: number
+  }
+
+  type TenantApp = {
+    name: string
+    memberships: Membership[]
+    id: string
+    url: string
+    tier: string
+    type: 'gym-management'
+  }
+  type MembaUser = {
+    authenticatedUserId: string
+    emailAddress: string
+    firstName: string
+    id: string
+    isTenantAdmin: boolean
+    lastName: string
+    tenantId: string
+    tenant: {
+      id: string
+      admins: string[]
+      apps: TenantApp[]
+    }
+  }
+
+  type CreateGymAppRequest = {
+    tenantId: string
+    gymName: string
+    tier: string
+    memberships: Membership[]
+  }
+
   interface NewCustomerFormDetails extends FormikValues {
     emailAddress?: string
     password?: string
-    companyName?: string
     firstName?: string
     lastName?: string
+  }
+
+  interface GetTenantUserApiResult {
+    result: MembaUser
   }
 
   type FormikError =
@@ -145,6 +183,45 @@ declare global {
 
   type AppsContent = {
     heading: string
+    gymManagementTitle: string
+  }
+
+  type GymManagementContent = {
+    heading: string
+    goBack: string
+    gymNameLabel: string
+    gymDetails: string
+    gymNamePlaceholder: string
+    gymUrlSuffix: string
+    gymUrlLabel: string
+    gymMembershipsTitle: string
+    gymNameExample: string
+    gymMembershipName: string
+    gymMembershipNamePlaceholder: string
+    gymMembershipPricePlaceholder: string
+    gymMembershipPrice: string
+    yourMemberships: string
+    noMemberships: string
+    addMembership: string
+    createCta: string
+    noMembershipsError: string
+    noGymNameError: string
+    freeTierTitleText: string
+    freeTierTitleNumber: string
+    freeTierPricePerMonth: string
+    freeTierNumberOfCustomer: string
+    basicTierTitleText: string
+    basicTierTitleNumber: string
+    basicTierPricePerMonth: string
+    basicTierNumberOfCustomer: string
+    premiumTierTitleText: string
+    premiumTierTitleNumber: string
+    premiumTierPricePerMonth: string
+    premiumTierNumberOfCustomer: string
+    transactionalCosts: string
+    select: string
+    selectedText: string
+    findOutMore: string
   }
 }
 

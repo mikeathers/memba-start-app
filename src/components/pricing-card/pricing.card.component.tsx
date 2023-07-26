@@ -21,9 +21,11 @@ interface PricingCardProps {
   numberOfCustomers: string
   transactionalCosts: string
   findOutMore: string
-  getStarted: string
-  getStartedClick: () => void
+  select: string
+  selectedText: string
+  selectClick: () => void
   findOutMoreClick: () => void
+  selected: boolean
 }
 
 export const PricingCard: React.FC<PricingCardProps> = (props) => {
@@ -33,11 +35,13 @@ export const PricingCard: React.FC<PricingCardProps> = (props) => {
     pricePerMonth,
     numberOfCustomers,
     transactionalCosts,
-    getStarted,
-    getStartedClick,
+    select,
+    selectedText,
+    selectClick,
+    selected,
   } = props
   return (
-    <Container>
+    <Container selected={selected}>
       <TitleContainer>
         <TitleNumber>{titleNumber}</TitleNumber>
         <TitleText>{titleText}</TitleText>
@@ -59,10 +63,10 @@ export const PricingCard: React.FC<PricingCardProps> = (props) => {
         {/*</Button>*/}
         <Button
           variant={'primary'}
-          onClick={getStartedClick}
+          onClick={selectClick}
           $marginTopX={spacingTokens.space10x}
         >
-          {getStarted}
+          {selected ? selectedText : select}
         </Button>
       </Content>
     </Container>
