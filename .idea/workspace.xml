@@ -5,46 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d160f9cb-a2f2-4afc-8dc5-c7fc16c81513" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app-pages/apps/assets/dumbbell.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app-pages/gym-management/gym-management.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app-pages/gym-management/gym-management.styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app-pages/gym-management/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/gym-management/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/use-tenant/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/use-tenant/use-tenant.hook.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/tenants/create-gym-app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/tenants/get-tenant-account.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/tenants/get-tenant.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/axios/axios-tenants-instance.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/axios/axios-users-instance.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/axios/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/env/.env.development" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/env/.env.production" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app-pages/apps/apps.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/apps/apps.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app-pages/apps/apps.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/apps/apps.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app-pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pricing-card/pricing-card.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pricing-card/pricing-card.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pricing-card/pricing.card.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pricing-card/pricing.card.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text-input/text-input.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text-input/text-input.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text-input/text-input.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text-input/text-input.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text/text.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text/text.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/title-bar/title-bar.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/title-bar/title-bar.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app-pages/gym-management/gym-management.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/gym-management/gym-management.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/tenants/create-tenant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tenants/create-tenant-account.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/tenants/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tenants/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/variables.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/type-guarding/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/type-guarding/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +70,7 @@
       <workItem from="1689702371260" duration="154000" />
       <workItem from="1689852455158" duration="629000" />
       <workItem from="1689922695589" duration="28348000" />
-      <workItem from="1690226585153" duration="28301000" />
+      <workItem from="1690226585153" duration="29390000" />
     </task>
     <servers />
   </component>

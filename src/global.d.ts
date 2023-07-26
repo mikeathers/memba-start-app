@@ -23,6 +23,13 @@ declare global {
     tier: string
     type: 'gym-management'
   }
+
+  type Tenant = {
+    id: string
+    admins: string[]
+    apps: TenantApp[]
+  }
+
   type MembaUser = {
     authenticatedUserId: string
     emailAddress: string
@@ -31,11 +38,7 @@ declare global {
     isTenantAdmin: boolean
     lastName: string
     tenantId: string
-    tenant: {
-      id: string
-      admins: string[]
-      apps: TenantApp[]
-    }
+    tenant: Tenant
   }
 
   type CreateGymAppRequest = {

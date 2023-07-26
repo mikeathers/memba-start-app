@@ -22,6 +22,7 @@ import {CONFIG, TIERS} from '@/config'
 import {colorTokens, spacingTokens} from '@/styles'
 import {createGymApp} from '@/services'
 import {useSafeAsync, useTenant} from '@/hooks'
+import {useRouter} from 'next/navigation'
 
 interface GymManagementProps {
   content: GymManagementContent
@@ -36,6 +37,7 @@ export const GymManagement: React.FC<GymManagementProps> = (props) => {
   const [membership, setMembership] = useState<Membership>({name: '', price: 0})
   const [memberships, setMemberships] = useState<Membership[]>([])
   const [formError, setFormError] = useState<string | null>(null)
+  const router = useRouter()
 
   useEffect(() => {
     console.log({error, data, user})
@@ -75,7 +77,10 @@ export const GymManagement: React.FC<GymManagementProps> = (props) => {
       }),
     )
 
-    console.log({result})
+    if (result) {
+      const gymApp = (result as Tenant).apps.find((app) => app.type === 'gym-management')
+      router.push(gymApp?.url || '')
+    }
   }
 
   return (
