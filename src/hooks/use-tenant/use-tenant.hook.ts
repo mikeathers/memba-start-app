@@ -9,7 +9,6 @@ interface TenantStore {
 export const useTenant = create<TenantStore>((set) => ({
   getUser: async (emailAddress: string) => {
     const response = await getTenantAccount({emailAddress})
-    console.log({response})
     set({user: response})
   },
   user: null,

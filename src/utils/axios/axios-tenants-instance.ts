@@ -27,8 +27,12 @@ axiosTenantsAuthInstance.interceptors.request.use(
 )
 
 function getUserToken() {
-  if (typeof window !== 'undefined') {
-    return getItemFromLocalStorage<string>(JWT_LOCALSTORAGE_KEY)
+  try {
+    if (typeof window !== 'undefined') {
+      return getItemFromLocalStorage<string>(JWT_LOCALSTORAGE_KEY)
+    }
+    return null
+  } catch {
+    return null
   }
-  return null
 }

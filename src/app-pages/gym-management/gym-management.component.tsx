@@ -40,6 +40,13 @@ export const GymManagement: React.FC<GymManagementProps> = (props) => {
   const [formError, setFormError] = useState<string | null>(null)
   const router = useRouter()
 
+  useEffect(() => {
+    const gymApp = user?.tenant.apps.find((item) => item.type === 'gym-management')
+    if (gymApp) {
+      router.push(gymApp.url)
+    }
+  }, [user])
+
   const handleSelectClick = (tier: string) => {
     setSelectedTier(tier)
   }

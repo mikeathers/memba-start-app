@@ -11,6 +11,7 @@ export const initialState: AuthState = {
 }
 
 export const authReducer = (state: AuthState, action: AuthReducerAction): AuthState => {
+  console.log({action})
   switch (action.type) {
     case ActionTypes.IS_LOGGING_IN: {
       return initialState
