@@ -33,23 +33,24 @@ export const GymManagement: React.FC<GymManagementProps> = (props) => {
   const {user} = useTenant()
   const {run, error, data, isLoading} = useSafeAsync()
   const [gymName, setGymName] = useState<string>('')
+  const [parsedGymName, setParsedGymName] = useState<string>('')
   const [selectedTier, setSelectedTier] = useState<string>(TIERS.FREE)
   const [membership, setMembership] = useState<Membership>({name: '', price: 0})
   const [memberships, setMemberships] = useState<Membership[]>([])
   const [formError, setFormError] = useState<string | null>(null)
   const router = useRouter()
 
-  useEffect(() => {
-    console.log({error, data, user})
-  }, [error, data, user])
-
   const handleSelectClick = (tier: string) => {
     setSelectedTier(tier)
   }
 
   const handleSetGymName = (gymName: string) => {
-    const parsedGymName = gymName.replace(' ', '')
-    setGymName(`${parsedGymName}`)
+    const gymNameWithNoSpecialCharacters = gymName.replace(/[^a-zA-Z ]/g, '')
+    const parsedGymNameForUrl = gymNameWithNoSpecialCharacters
+      .replace(' ', '')
+      .toLowerCase()
+    setParsedGymName(parsedGymNameForUrl)
+    setGymName(gymNameWithNoSpecialCharacters)
   }
 
   const handleAddMembership = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -151,7 +152,9 @@ export const GymManagement: React.FC<GymManagementProps> = (props) => {
                   {content.gymUrlLabel}
                 </Text>
                 {gymName ? (
-                  <Text type={'body-bold'}>{`${gymName}${content.gymUrlSuffix}`}</Text>
+                  <Text
+                    type={'body-bold'}
+                  >{`${parsedGymName}${content.gymUrlSuffix}`}</Text>
                 ) : (
                   <Text type={'footnote'}>{content.gymNameExample}</Text>
                 )}
