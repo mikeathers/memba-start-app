@@ -17,6 +17,7 @@ export const getTenantAccount = async (
     data: props,
   })
 
+  console.log({response})
   // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-  return response?.data.result
+  return response?.data
 }

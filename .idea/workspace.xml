@@ -6,15 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d160f9cb-a2f2-4afc-8dc5-c7fc16c81513" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app-pages/apps/apps.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/apps/apps.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app-pages/gym-management/gym-management.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/gym-management/gym-management.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.styles.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/auth/auth.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/auth/auth.reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/use-tenant/use-tenant.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use-tenant/use-tenant.hook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/axios/axios-tenants-instance.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/axios/axios-tenants-instance.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/axios/axios-users-instance.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/axios/axios-users-instance.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/tenants/create-gym-app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tenants/create-gym-app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/tenants/get-tenant-account.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tenants/get-tenant-account.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +74,10 @@
       <workItem from="1689852455158" duration="629000" />
       <workItem from="1689922695589" duration="28348000" />
       <workItem from="1690226585153" duration="30035000" />
-      <workItem from="1690521754316" duration="13709000" />
+      <workItem from="1690521754316" duration="14321000" />
+      <workItem from="1690538991922" duration="251000" />
+      <workItem from="1690724791403" duration="3834000" />
+      <workItem from="1690875626898" duration="2820000" />
     </task>
     <servers />
   </component>

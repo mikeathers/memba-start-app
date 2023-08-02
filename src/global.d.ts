@@ -5,8 +5,8 @@ declare global {
     emailAddress: string
     familyName: string
     givenName: string
-    isTenantAdmin?: boolean
-    isMembaAdmin?: boolean
+    isTenantAdmin?: string
+    isMembaAdmin?: string
     tenantId?: string
   }
 
@@ -35,7 +35,7 @@ declare global {
     emailAddress: string
     firstName: string
     id: string
-    isTenantAdmin: boolean
+    isTenantAdmin: string
     lastName: string
     tenantId: string
     tenant: Tenant
@@ -46,6 +46,7 @@ declare global {
     gymName: string
     tier: string
     memberships: Membership[]
+    tenantAdminEmailAddress: string
   }
 
   interface NewCustomerFormDetails extends FormikValues {
@@ -89,8 +90,8 @@ declare global {
     picture?: string
     phone_number?: string
     address?: string
-    'custom:isTenantAdmin'?: boolean
-    'custom:isMembaAdmin'?: boolean
+    'custom:isTenantAdmin'?: string
+    'custom:isMembaAdmin'?: string
     'custom:tenantId'?: string
   }
 

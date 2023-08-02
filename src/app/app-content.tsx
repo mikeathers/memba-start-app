@@ -50,13 +50,13 @@ export const AppContent: React.FC<AppContentProps> = (props) => {
 
   useEffect(() => {
     if (state.user) {
-      const isTenantAdmin = user?.isTenantAdmin
+      const isTenantAdmin = state?.user?.isTenantAdmin === 'true'
       const gymApp = user?.tenant.apps.find((item) => item.type === 'gym-management')
       if (!isTenantAdmin) {
         router.push(gymApp?.url || CONFIG.SITE_ROUTES.ID)
       }
     }
-  }, [user])
+  }, [state.user])
 
   if (isLoading || state.isAuthenticating) return <Loading />
 

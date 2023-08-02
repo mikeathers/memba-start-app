@@ -13,7 +13,7 @@ export const createGymApp = async (
   })
 
   // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-  return response?.data.result
+  return response?.data
 
   return null
 }

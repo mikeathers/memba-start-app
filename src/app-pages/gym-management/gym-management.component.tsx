@@ -82,6 +82,7 @@ export const GymManagement: React.FC<GymManagementProps> = (props) => {
         tenantId: user?.tenantId || '',
         tier: selectedTier,
         memberships,
+        tenantAdminEmailAddress: user?.emailAddress || '',
       }),
     )
 
