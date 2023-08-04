@@ -8,7 +8,7 @@ interface CreateTenantAccountProps extends NewCustomerFormDetails {
 const httpClient = axios.create()
 
 export const createTenantAccount = async (props: CreateTenantAccountProps) => {
-  const URL = `${CONFIG.API_ROUTES.TENANTS_API}/`
+  const URL = `${CONFIG.API_ROUTES.TENANTS_API}/create-account`
 
   return await httpClient.request<RegisterTenantResponse | BadResponse>({
     url: URL,

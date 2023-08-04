@@ -8,6 +8,7 @@ interface PAGE_ROUTES {
 
 interface SITE_ROUTES {
   ID: string
+  WEBSITE_HOME: string
 }
 
 export const PAGE_ROUTES: PAGE_ROUTES = {
@@ -17,10 +18,12 @@ export const PAGE_ROUTES: PAGE_ROUTES = {
 
 export const DEV_SITE_ROUTES: SITE_ROUTES = {
   ID: process.env.NEXT_PUBLIC_ID_APP_URL ?? '',
+  WEBSITE_HOME: 'https://dev.memba.co.uk',
 }
 
 export const PROD_SITE_ROUTES: SITE_ROUTES = {
   ID: 'https://id.memba.co.uk',
+  WEBSITE_HOME: 'https://memba.co.uk',
 }
 
 interface API_ROUTES {
