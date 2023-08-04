@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d160f9cb-a2f2-4afc-8dc5-c7fc16c81513" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app-pages/gym-management/gym-management.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/gym-management/gym-management.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/tenants/create-tenant-account.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tenants/create-tenant-account.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/tenants/get-tenant.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/tenants/create-gym-app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tenants/create-gym-app.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,7 @@
       <workItem from="1690538991922" duration="251000" />
       <workItem from="1690724791403" duration="3834000" />
       <workItem from="1690875626898" duration="2820000" />
-      <workItem from="1690998774207" duration="7318000" />
+      <workItem from="1690998774207" duration="10604000" />
     </task>
     <servers />
   </component>

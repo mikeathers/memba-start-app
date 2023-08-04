@@ -48,15 +48,6 @@ export const AppContent: React.FC<AppContentProps> = (props) => {
     handleGetUser()
   }, [state.isAuthenticated])
 
-  useEffect(() => {
-    if (state.user) {
-      const isTenantAdmin = state?.user?.isTenantAdmin === 'true'
-      if (!isTenantAdmin) {
-        router.push(CONFIG.SITE_ROUTES.WEBSITE_HOME)
-      }
-    }
-  }, [state.user])
-
   if (isLoading || state.isAuthenticating || !state.user) return <Loading />
 
   return (

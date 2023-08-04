@@ -35,7 +35,8 @@ declare global {
     emailAddress: string
     firstName: string
     id: string
-    isTenantAdmin: string
+    isTenantAdmin: boolean
+    isMembaAdmin: boolean
     lastName: string
     tenantId: string
     tenant: Tenant
@@ -47,6 +48,7 @@ declare global {
     tier: string
     memberships: Membership[]
     tenantAdminEmailAddress: string
+    user: MembaUser | null
   }
 
   interface NewCustomerFormDetails extends FormikValues {
